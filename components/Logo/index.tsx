@@ -1,14 +1,18 @@
+"use client"
+
 import data from '@/data'
+import Image from 'next/image'
 import React from 'react'
+import { Playfair } from "next/font/google";
+import { useHeroIntersectionContext } from '@/app/heroIntersection.context';
+
+const font = Playfair({ subsets: ["latin"], weight: ["400", "500", "600"] });
 
 export default function Logo() {
-  if(data.icon) {
-    return <div className='flex items-center gap-2 text-2xl md:text-3xl font-black'>
-      <span>{data.icon}</span>
-      <span className='hidden md:inline text-xl'>{data.name}</span>
-    </div> 
-  } 
+ const { inView } = useHeroIntersectionContext();
   return (
-    <span className="font-black text-xl md:text-3xl">{data.name}</span>
+    <div className='flex items-center gap-2 '>
+      <Image alt='Logo' src={!inView ? '/logo.png' : '/logo-white.png'} width={150} height={120} />
+    </div>
   )
 }

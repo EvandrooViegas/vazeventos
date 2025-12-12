@@ -1,11 +1,14 @@
+import { BiSpa } from "react-icons/bi";
 import { HiOutlineSpeakerphone } from "react-icons/hi";
+import { LuDroplet } from "react-icons/lu";
 import { RiToothLine } from "react-icons/ri";
+import { TbChartBubble, TbVirusOff } from "react-icons/tb";
 
 const icon = <HiOutlineSpeakerphone />
 const data = {
-  number: "123 456 789",
-  name: "Jandira Vaz",
-  email: "jandiravaz@gmail.com",
+  number: "351936376566",
+  name: "Sónia Eliana",
+  email: "sonialeliana@gmail.com",
   icon,
   location: ["Lisboa", "Portugal"],
   working_hours: [
@@ -15,90 +18,96 @@ const data = {
   ],
   prices: [
     {
-      name: "Lorem ipsum dolor",
-      price: "50€",
+      name: "Avaliação Capilar",
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
-    {
-      name: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem",
-      price: "80€",
+      {
+      name: "Detox Capilar",
       description:
-        "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
-    {
-      name: "Sit amet, consectetur adipiscing elit",
-      price: "150€",
+     {
+      name: "Queda de Cabelo/Alopecias",
       description:
-        "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit",
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
-    {
-      name: "Ut enim ad minima veniam",
-      price: "1200€",
+     {
+      name: "Dermatite Seborreica",
       description:
-        "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet",
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
-    {
-      name: "Lorem ipsum dolor sit amet",
-      price: "300€",
+     {
+      name: "Psóríase",
       description:
-        "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
-    {
-      name: "Ut enim ad minima veniam, quis nostrum exercitationem",
-      price: "100€",
+     {
+      name: "Caspa",
       description:
-        "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit",
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    },
+     {
+      name: "Foliculite",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
   ],
 
   status: [
-    { text: "Quis autem vel eum iure reprehenderit qui ", number: 20 },
-    { text: "Ut enim ad minima veniam, quis nostrum", number: 5 },
-    { text: "Sed ut perspiciatis unde omnis iste", number: 5 },
-    { text: "Nemo enim ipsam voluptatem quia", number: 100 },
+    { text: "Casos de Sucesso", number: 55 },
+    { text: "Cabelos Transformados", number: 55 },
+    { text: "Anos de Expriência", number: 55 },
+    { text: "Avaliações Positivas", number: 55 },
   ],
   reviews: [
     {
-      name: "Sed ut perspiciatis unde omnis ",
+      name: "Joana",
       description:
         "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores",
       date: "2024-01-04",
     },
     {
-      name: "Sed ut perspiciatis unde omnis ",
+      name: "Maria",
       description:
         "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores",
       date: "2024-01-04",
     },
     {
-      name: "Sed ut perspiciatis unde omnis ",
+      name: "Roberta",
       description:
         "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores",
       date: "2024-01-04",
     },
   ],
   socials: [
-    { name: "facebook", url: "google.com" },
-    { name: "instagram", url: "google.com" },
+    { name: "facebook", url: "facebook.com" },
+    { name: "instagram", url: "instagram.com" },
+    { name: "TikTok", url: "tiktok.com" },
     { name: "email", url: "google.com" },
   ],
   services: [
     {
-      title: "The standard Lorem Ipsum",
+      title: "Laser",
       image_path: "/services/1.jpg",
       subtitle:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
     },
     {
-      title: "The standard Lorem Ipsum",
+      title: "Alta-Frequência",
       image_path: "/services/2.jpg",
       subtitle:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
     },   
     {
-      title: "The standard Lorem Ipsum",
+      title: "Intradermoterapia",
       image_path: "/services/3.jpg",
+      subtitle:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    }, 
+    {
+      title: "Terapia Ilibi",
+      image_path: "/services/4.jpg",
       subtitle:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
     }, 
@@ -116,53 +125,31 @@ const data = {
             { name: "email", url: "google.com" },
         ]
     },
-    {
-      name: "Lorem ipsum dolor sit amet",
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-        img_path: "/workers/2.jpg",
-        socials: [
-            { name: "facebook", url: "google.com" },
-            { name: "instagram", url: "google.com" },
-            { name: "email", url: "google.com" },
-        ]
-    },
-    {
-      name: "Lorem ipsum dolor sit amet",
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-        img_path: "/workers/3.jpg",
-        socials: [
-            { name: "facebook", url: "google.com" },
-            { name: "instagram", url: "google.com" },
-            { name: "email", url: "google.com" },
-        ]
-    },
   ],
   skills: [
     {
-      icon,
-      title: "Lorem ipsum dolor sit amet",
+      icon:  <BiSpa />,
+      title: "Queda de Cabelo",
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
+        "Conforme o tipo e a causa da alopecia, pode incluir vitaminas, terapia a laser, tratamentos de tricologia alternativos e desinflamação do couro cabeludo, através de método indolor e não cirúrgico.",
     },
     {
-      icon,
-      title: "Lorem ipsum dolor sit amet",
+      icon: <TbChartBubble />,
+      title: "Limpeza do terreno biológico",
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
+        "Limpar o terreno e remover toxinas inclui a avaliação e foco no equilíbrio biológico para desinflamar o corpo.",
     },
     {
-      icon,
-      title: "Lorem ipsum dolor sit amet",
+      icon: <TbVirusOff />,
+      title: "Detox metais e Parasitas quântico",
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
+        "Tratamento para eliminação de vermes, protozoários, parasitas e metais tóxicos no nosso organismo, para garantir o bom funcionamento do corpo.",
     },
     {
-      icon,
-      title: "Lorem ipsum dolor sit amet",
+      icon:<LuDroplet />,
+      title: "Infusão de Nutrientes",
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
+        "Administração direta de nutrientes essenciais, como vitaminas, minerais, aminoácidos, fatores de crescimento e entre outros componentes benéficos para o seu caso específico.",
     },
   ],
   booking_url: "google.com",

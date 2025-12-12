@@ -7,7 +7,9 @@ const Context = createContext({} as InViewHookResponse)
 export function HeroIntersectionContextProvider({ children }: {
     children: React.ReactNode
 })  {
-    const res = useInView()
+    const res = useInView({
+        threshold: 0.10
+    })
     return (
         <Context.Provider value={res}>
             {children}

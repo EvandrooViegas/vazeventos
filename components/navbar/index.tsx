@@ -22,18 +22,18 @@ export default function Navbar() {
       window.document.body.classList.remove("hide-scrollbar");
     }
   }, [open]);
-
+console.log(inView)
   return (
     <>
       <AnimateElement
-        className={`transition-all  bg-white text-black border-b border-b-black/10 fixed top-0 inset-x-0 p-8 nav-z max-screen-w mx-auto `}
+        className={`transition-all  ${inView ? 'md:bg-transparent md:text-white' : 'bg-white md:text-black shadow'} text-black  fixed top-0 inset-x-0 px-8 py-4 nav-z max-screen-w mx-auto `}
       >
         <nav className="flex full justify-between items-center">
           <Logo />
 
           <button
             onClick={() => setOpen(true)}
-            className="md:hidden inline text-2xl"
+            className={`md:hidden inline text-2xl ${inView ? 'text-white' : 'text-black'} `}
           >
             <GiHamburgerMenu />
           </button>

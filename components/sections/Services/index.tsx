@@ -40,7 +40,7 @@ export default function Services() {
   <div className="w-full flex  gap-12 flex-col items-center">
         <AnimateElement className="font-black flex flex-col items-center text-center w-full space-y-4">
           <span className="text-2xl text-neutral-400">
-            OS NOSSOS SERVIÇOS
+            Conheça Nossos Tratamentos
           </span>
           <span className="text-5xl md:w-[65%]">
            TUDO O QUE PRECISA!
